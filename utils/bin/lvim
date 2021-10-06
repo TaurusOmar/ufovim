@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export UFOVIM_RUNTIME_DIR="${UFOVIM_RUNTIME_DIR:-$HOME/.local/share/ufovim}"
+export UFOVIM_CONFIG_DIR="${UFOVIM_CONFIG_DIR:-$HOME/.config/ufovim}"
+
+exec nvim -u "$UFOVIM_RUNTIME_DIR/ufovim/init.lua" "$@"

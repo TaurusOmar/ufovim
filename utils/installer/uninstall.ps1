@@ -1,0 +1,1 @@
+Remove-Item -Path "$HOME/.local/share/ufovim" -Recurse -Force
