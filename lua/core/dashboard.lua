@@ -68,7 +68,7 @@ M.setup = function()
 
   vim.g.dashboard_session_directory = ufovim.builtin.dashboard.session_directory
 
-  local ufovim_site = "ufovim.org"
+  local ufovim_site = "taurusomar.com"
   local ufovim_version = get_version "short"
   local num_plugins_loaded = #vim.fn.globpath(get_runtime_dir() .. "/site/pack/packer/start", "*", 0, 1)
 
