@@ -17,25 +17,79 @@
 </div>
 
 ## Documentation
+![ufovim1](https://i.imgur.com/6E1SYqw.png)
 
-You can find all the documentation for ufovim at [ufovim.xxxxxx](https://www.taurusomar.com)
+## Requirements
 
-## Install In One Command!
+Neovim 0.5
+```
+sudo apt install neovim (debian)
+sudo pacman -Sy neovim (arch)
+```
+Lua
+```
+sudo apt install lua (debian)
+sudo pacman -Sy lua (arch)
+```
+npm 
 
-Make sure you have the release version of Neovim (0.5).
+```
+sudo apt install npm (debian)
+sudo pacman -Sy npm (arch)
+```
+Python Libraries
+```
+pip3 install pyright
+```
+## Install UfoVim In One-Liner Command!
+
+Make sure you have  version of Neovim (0.5).
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/TaurusOmar/ufovim/master/utils/installer/install.sh)
 ```
 
+
 ## Install Language support
 
-- Enter `:LspInstall` followed by `<TAB>` to see your options for LSP
+- Enter `:LspInstall` followed by `<TAB>` to see your language server options for LSP
 
-- Enter `:TSInstall` followed by `<TAB>` to see your options for syntax highlighting
+- Enter `:TSInstall` followed by `<TAB>` to see your syntax language highlighting options
 
-**NOTE** I recommend installing `lua` for autocomplete in `config.lua`
+## Additional Plugins Example
 
+- Open config.lua and adding
+```
+ ufovim.plugins = {
+  {"usergithub/pluginnew"},
+  {"folke/tokyonight.nvim"}, 
+}
+```
+## Change Color Theme
+
+- Edit config.lua and adding
+```
+ufovim.colorscheme = "gruvbox-material"
+```
+
+## Which-Keys
+
+- Space leader key
+
+
+| Key         | Default Menu Lead                                                           |
+|-------------|-----------------------------------------------------------------------------|
+| space       | Default Menu Lead                                                           |
+| Crtl+w      | Menu Windows Lead	                                                    |
+| z           | Menu Line & Cursor Lead                                                     |
+| g           | Menu Go-to & marks Lead                                                     |
+| [           | Menu Nav Lead                                                               |
+
+## Concept
+
+![ufovim2](https://i.imgur.com/E96InV3.png)
+![ufovim3](https://i.imgur.com/7nNXiHV.png)
+![ufovim4](https://i.imgur.com/nWq31Pc.png)
 
 <div align="center" id="madewithlua">
 	
