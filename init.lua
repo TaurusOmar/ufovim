@@ -15,8 +15,7 @@ require("plugin-loader"):load { plugins, ufovim.plugins }
 local Log = require "core.log"
 Log:debug "Starting UfoVim"
 
-vim.g.colors_name = ufovim.colorscheme -- Colorscheme must get called after plugins are loaded or it will break new installs.
-vim.cmd("colorscheme " .. ufovim.colorscheme)
+vim.g.colors_name = ufovim.colorscheme
 
 local commands = require "core.commands"
 commands.load(commands.defaults)
