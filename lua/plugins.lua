@@ -199,8 +199,6 @@ return {
 -- Colorizer
 {
   "norcalli/nvim-colorizer.lua",
-  require'colorizer'.setup() 
-
 },
 
 -- Codi
