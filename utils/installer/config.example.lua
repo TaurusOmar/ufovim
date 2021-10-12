@@ -11,7 +11,7 @@ an executable
 -- general
 ufovim.log.level = "warn"
 ufovim.format_on_save = true
-ufovim.colorscheme = "gruvbox-material"
+ufovim.colorscheme = "onedarker"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 ufovim.leader = "space"
