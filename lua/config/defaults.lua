@@ -3,7 +3,7 @@ local utils = require "utils"
 
 ufovim = {
   leader = "space",
-  colorscheme = "onedarker",
+  colorscheme = "gruvbox-material",
   line_wrap_cursor_movement = true,
   transparent_window = false,
   format_on_save = true,

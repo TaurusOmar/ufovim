@@ -19,6 +19,11 @@ return {
     end,
     disable = not ufovim.builtin.telescope.active,
   },
+    -- Telescope Project
+    {
+      "nvim-telescope/telescope-project.nvim",
+        require("core.telescope").setup()
+    },
   -- Install nvim-cmp, and buffer source as a dependency
   {
     "hrsh7th/nvim-cmp",
@@ -161,7 +166,7 @@ return {
 
   -- Dashboard
   {
-    "ChristianChiarulli/dashboard-nvim",
+    "glepnir/dashboard-nvim",
     event = "BufWinEnter",
     config = function()
       require("core.dashboard").setup()
@@ -178,4 +183,46 @@ return {
     end,
     disable = not ufovim.builtin.terminal.active,
   },
+
+-- Ranger
+  {
+    "kevinhwang91/rnvimr",
+  },
+
+-- Blankline
+{
+  "lukas-reineke/indent-blankline.nvim",
+  config = function()
+    require "core.blankline"
+  end,
+},
+
+-- Colorizer
+{
+  "norcalli/nvim-colorizer.lua",
+  require'colorizer'.setup() 
+
+},
+
+-- Codi
+{
+  "metakirby5/codi.vim", 
+},
+
+-- theme
+{
+  "sainnhe/gruvbox-material", 
+
+},
+
+-- AnyJump
+{
+  "pechorin/any-jump.vim",
+},
+
+-- Calendar
+{
+  "itchyny/calendar.vim",
+},
+
 }

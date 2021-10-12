@@ -70,8 +70,20 @@ M.config = function()
       ["c"] = { "<cmd>BufferClose!<CR>", "Close Buffer" },
       ["f"] = { "<cmd>Telescope find_files<CR>", "Find File" },
       ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+      ["t"] = { "<cmd>ToggleTerm<CR>", "Terminal" },
+      ["v"] = { "<cmd>vsplit<CR>", "Split" },
+      ["r"] = { "<cmd>RnvimrToggle<CR>", "Ranger Explorer" },
+
+
+      C = {
+        name = "Color Scheme",
+        d = { ":set background=dark<CR>", "dark" },
+        l = { ":set background=light<CR>", "ligth" },
+      },
+
       b = {
         name = "Buffers",
+        c = { "<cmd>BufferPick<cr>", "Jump" },
         j = { "<cmd>BufferPick<cr>", "Jump" },
         f = { "<cmd>Telescope buffers<cr>", "Find" },
         b = { "<cmd>b#<cr>", "Previous" },
@@ -94,6 +106,7 @@ M.config = function()
           "Sort by language",
         },
       },
+
       p = {
         name = "Packer",
         c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -241,7 +254,7 @@ M.config = function()
         i = { ":TSConfigInfo<cr>", "Info" },
       },
     },
-  }
+}
 end
 
 M.setup = function()

@@ -17,7 +17,7 @@ function M.config()
 
   ufovim.builtin.telescope = vim.tbl_extend("force", ufovim.builtin.telescope, {
     defaults = {
-      prompt_prefix = " ",
+      prompt_prefix = " ",
       selection_caret = " ",
       entry_prefix = "  ",
       initial_mode = "insert",
@@ -25,11 +25,10 @@ function M.config()
       sorting_strategy = "descending",
       layout_strategy = "horizontal",
       layout_config = {
-        width = 0.75,
-        prompt_position = "bottom",
-        preview_cutoff = 120,
-        horizontal = { mirror = false },
-        vertical = { mirror = false },
+        horizontal = {
+           prompt_position = "top",
+           preview_width = 0.55,
+           results_width = 0.8,}
       },
       file_sorter = require("telescope.sorters").get_fzy_sorter,
       file_ignore_patterns = {},
@@ -164,7 +163,10 @@ function M.setup()
 
   telescope.setup(ufovim.builtin.telescope)
   if ufovim.builtin.project.active then
-    telescope.load_extension "projects"
+  require'telescope'.load_extension('project')
+  hidden_files = 'true'
+
+
   end
 
   if ufovim.builtin.telescope.on_config_done then

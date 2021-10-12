@@ -30,22 +30,34 @@ M.config = function(config)
 
     custom_section = {
       a = {
+        description = { "  New File           " },
+        command = "DashboardNewFile",
+      },
+      b = {
         description = { "  Find File          " },
         command = "Telescope find_files",
       },
-      b = {
-        description = { "  Recent Projects    " },
-        command = "Telescope projects",
-      },
       c = {
+        description = { "  Recent Projects    " },
+        command = "Telescope project",
+      },
+      d = {
         description = { "  Recently Used Files" },
         command = "Telescope oldfiles",
       },
-      d = {
+      e = {
         description = { "  Find Word          " },
         command = "Telescope live_grep",
       },
-      e = {
+      f = {
+        description = { "  Calendar           " },
+        command = "Calendar",
+      },
+      g = {
+        description = { "  Terminal           " },
+        command = "ToggleTerm",
+      },
+      h = {
         description = { "  Configuration      " },
         command = ":e " .. config.path,
       },

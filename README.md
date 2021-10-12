@@ -18,7 +18,7 @@
 
 ## Documentation
 
-You can find all the documentation for ufovim at [ufovim.xxxxxx](https://www.ufovim.xxxxxxx)
+You can find all the documentation for ufovim at [ufovim.xxxxxx](https://www.taurusomar.com)
 
 ## Install In One Command!
 
@@ -40,5 +40,7 @@ bash <(curl -s https://raw.githubusercontent.com/TaurusOmar/ufovim/master/utils/
 <div align="center" id="madewithlua">
 	
 [![Lua](https://img.shields.io/badge/Made%20with%20Lua-blue.svg?style=for-the-badge&logo=lua)](#madewithlua)
+
+fork LunarVim
 	
 </div>

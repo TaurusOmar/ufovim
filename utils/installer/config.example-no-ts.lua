@@ -3,7 +3,7 @@
 -- general
 ufovim.format_on_save = true
 ufovim.lint_on_save = true
-ufovim.colorscheme = "onedarker"
+ufovim.colorscheme = "embark"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 ufovim.leader = "space"

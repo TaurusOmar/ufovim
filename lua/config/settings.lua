@@ -45,6 +45,7 @@ M.load_options = function()
     spelllang = "en",
     scrolloff = 8, -- is one of my fav
     sidescrolloff = 8,
+    cuc = true,
   }
 
   ---  SETTINGS  ---
