@@ -3,22 +3,24 @@ if os.getenv "UFOVIM_RUNTIME_DIR" then
   vim.opt.rtp:append(os.getenv "UFOVIM_RUNTIME_DIR" .. path_sep .. "ufovim")
 end
 
-require("ufovim.bootstrap"):init()
+require("bootstrap"):init()
 
-require("ufovim.config"):load()
+local config = require "config"
+-- config:init()
+config:load()
 
-local plugins = require "ufovim.plugins"
-require("ufovim.plugin-loader"):load { plugins, ufovim.plugins }
+local plugins = require "plugins"
+require("plugin-loader"):load { plugins, ufovim.plugins }
 
-local Log = require "ufovim.core.log"
+local Log = require "core.log"
 Log:debug "Starting UfoVim"
 
 vim.g.colors_name = ufovim.colorscheme -- Colorscheme must get called after plugins are loaded or it will break new installs.
 vim.cmd("colorscheme " .. ufovim.colorscheme)
 
-local commands = require "ufovim.core.commands"
+local commands = require "core.commands"
 commands.load(commands.defaults)
 
-require("ufovim.keymappings").setup()
+require("keymappings").setup()
 
-require("ufovim.lsp").setup()
+require("lsp").setup()
