@@ -13,6 +13,97 @@ return {
   { "nvim-lua/plenary.nvim" },
   -- Telescope
   {
+1
+return {
+2
+  -- Packer can manage itself as an optional plugin
+3
+  { "wbthomason/packer.nvim" },
+4
+  { "neovim/nvim-lspconfig" },
+5
+  { "tamago324/nlsp-settings.nvim" },
+6
+  { "jose-elias-alvarez/null-ls.nvim" },
+7
+  { "antoinemadec/FixCursorHold.nvim" }, -- Needed while issue https://github.com/neovim/neovim/issues/12587 is still open
+8
+  {
+9
+    "williamboman/nvim-lsp-installer",
+10
+  },
+11
+​
+12
+  { "nvim-lua/popup.nvim" },
+13
+  { "nvim-lua/plenary.nvim" },
+14
+  -- Telescope
+15
+  {
+16
+    "nvim-telescope/telescope.nvim",
+17
+    config = function()
+18
+      require("core.telescope").setup()
+19
+    end,
+20
+    disable = not ufovim.builtin.telescope.active,
+21
+  },
+22
+    -- Telescope Project
+23
+    {
+24
+      "nvim-telescope/telescope-project.nvim",
+25
+        require("core.telescope").setup()
+26
+    },
+27
+  -- Install nvim-cmp, and buffer source as a dependency
+28
+  {
+29
+    "hrsh7th/nvim-cmp",
+30
+    config = function()
+31
+      require("core.cmp").setup()
+32
+    end,
+33
+    requires = {
+34
+      "L3MON4D3/LuaSnip",
+35
+      "saadparwaiz1/cmp_luasnip",
+36
+      "hrsh7th/cmp-buffer",
+37
+      "hrsh7th/cmp-nvim-lsp",
+38
+      "hrsh7th/cmp-path",
+39
+      "hrsh7th/cmp-nvim-lua",
+40
+    },
+41
+    run = function()
+42
+      -- cmp's config requires cmp to be installed to run the first time
+43
+      if not ufovim.builtin.cmp then
+44
+        require("core.cmp").config()
+45
+      end
+
     "nvim-telescope/telescope.nvim",
     config = function()
       require("core.telescope").setup()
@@ -200,8 +291,6 @@ return {
 -- Colorizer
 {
   "norcalli/nvim-colorizer.lua",
-  require'colorizer'.setup() 
-
 },
 
 -- Codi
