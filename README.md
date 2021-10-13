@@ -6,7 +6,7 @@
     <a href="https://github.com/taurusomar/ufovim/pulse">
       <img alt="Last commit" src="https://img.shields.io/github/last-commit/taurusomar/ufovim"/>
     </a>
-    <a href="https://github.com/taurusomar/ufovim/blob/main/LICENSE">
+    <a href="https://github.com/taurusomar/ufovim/blob/rolling/LICENSE">
       <img src="https://img.shields.io/github/license/taurusomar/ufovim?style=flat-square&logo=GNU&label=License" alt="License"
     />
     <a href="https://twitter.com/intent/follow?screen_name=chrisatmachine">
@@ -48,6 +48,12 @@ Nerds Fonts
 
 ```
 /usr/share/fonts/
+```
+
+Ranger File Manager (optional)
+```
+sudo apt install ranger (debian)
+sudo pacman -Sy ranger (arch)
 ```
 ## Install UfoVim In One-Liner Command!
 
