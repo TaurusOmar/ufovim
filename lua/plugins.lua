@@ -206,12 +206,6 @@ return {
   "metakirby5/codi.vim", 
 },
 
--- theme
-{
-  "sainnhe/gruvbox-material", 
-
-},
-
 -- AnyJump
 {
   "pechorin/any-jump.vim",

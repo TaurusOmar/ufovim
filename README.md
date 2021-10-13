@@ -17,7 +17,7 @@
 </div>
 
 ## Documentation
-![ufovim1](https://i.imgur.com/6E1SYqw.png)
+![ufovim1](https://i.imgur.com/ChqSrMW.png)
 
 ## Requirements
 
@@ -87,9 +87,9 @@ ufovim.colorscheme = "gruvbox-material"
 
 ## Concept
 
-![ufovim2](https://i.imgur.com/E96InV3.png)
-![ufovim3](https://i.imgur.com/7nNXiHV.png)
-![ufovim4](https://i.imgur.com/nWq31Pc.png)
+![ufovim2](https://i.imgur.com/RAFYCsW.png)
+![ufovim3](https://i.imgur.com/UkuMY1f.png)
+![ufovim4](https://i.imgur.com/z1Jl2CM.png)
 
 <div align="center" id="madewithlua">
 	

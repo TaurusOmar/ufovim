@@ -73,12 +73,16 @@ M.config = function()
       ["t"] = { "<cmd>ToggleTerm<CR>", "Terminal" },
       ["v"] = { "<cmd>vsplit<CR>", "Split" },
       ["r"] = { "<cmd>RnvimrToggle<CR>", "Ranger Explorer" },
+      ["x"] = { "<cmd>ColorizerToggle<CR>", "Active Colorizer" },
 
 
       C = {
-        name = "Color Scheme",
-        d = { ":set background=dark<CR>", "dark" },
-        l = { ":set background=light<CR>", "ligth" },
+        name = "Change Theme",
+        a = { ":colorscheme github_dark<CR>", "dark" },
+        b = { ":colorscheme github_dark_default<CR>", "default" },
+        c = { ":colorscheme github_dimmed<CR>", "dimmed" },
+        d = { ":colorscheme github_light<CR>", "ligth" },
+        f = { ":colorscheme github_light_default<CR>", "ligth default" },
       },
 
       b = {
