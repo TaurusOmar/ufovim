@@ -37,10 +37,7 @@ npm
 sudo apt install npm (debian)
 sudo pacman -Sy npm (arch)
 ```
-Python Libraries
-```
-pip3 install pyright
-```
+
 Gcc
 ```
 sudo apt install gcc (debian)
