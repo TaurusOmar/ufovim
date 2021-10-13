@@ -41,6 +41,11 @@ Python Libraries
 ```
 pip3 install pyright
 ```
+Gcc
+```
+sudo apt install gcc (debian)
+sudo pacman -Sy gcc (arch)
+```
 ## Install UfoVim In One-Liner Command!
 
 Make sure you have  version of Neovim (0.5).
@@ -69,7 +74,7 @@ bash <(curl -s https://raw.githubusercontent.com/TaurusOmar/ufovim/master/utils/
 
 - Edit config.lua and adding
 ```
-ufovim.colorscheme = "gruvbox-material"
+ufovim.colorscheme = "github_dark_default"
 ```
 
 ## Which-Keys
