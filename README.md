@@ -51,6 +51,17 @@ Make sure you have  version of Neovim (0.5).
 bash <(curl -s https://raw.githubusercontent.com/TaurusOmar/ufovim/master/utils/installer/install.sh)
 ```
 
+## Exec UfoVim
+
+```
+ufovim
+```
+
+## Add Alias Zshrc & Bashrc
+```
+alias vim="~/.local/bin/ufovim"
+````
+
 
 ## Install Language support
 
