@@ -45,8 +45,6 @@ sudo pacman -Sy gcc (arch)
 ```
 ## Install UfoVim In One-Liner Command!
 
-Make sure you have  version of Neovim (0.5).
-
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/TaurusOmar/ufovim/master/utils/installer/install.sh)
 ```
