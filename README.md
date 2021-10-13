@@ -100,6 +100,5 @@ ufovim.colorscheme = "github_dark_default"
 	
 [![Lua](https://img.shields.io/badge/Made%20with%20Lua-blue.svg?style=for-the-badge&logo=lua)](#madewithlua)
 
-fork LunarVim
 	
 </div>
