@@ -43,6 +43,12 @@ Gcc
 sudo apt install gcc (debian)
 sudo pacman -Sy gcc (arch)
 ```
+Nerds Fonts
+- https://www.nerdfonts.com/font-downloads
+
+```
+/usr/share/fonts/
+```
 ## Install UfoVim In One-Liner Command!
 
 ```bash
